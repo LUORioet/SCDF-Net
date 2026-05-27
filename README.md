@@ -164,25 +164,6 @@ python train.py \
   --weight_decay 5e-4
 ```
 
-### Evaluation
-
-```bash
-python test.py \
-  --dataset LEVIR-CD \
-  --data_root ./datasets/LEVIR-CD \
-  --checkpoint ./checkpoints/scdfnet_levir.pth
-```
-
-### Inference
-
-```bash
-python infer.py \
-  --t1 path/to/t1.png \
-  --t2 path/to/t2.png \
-  --checkpoint ./checkpoints/scdfnet.pth \
-  --save_path ./results/change_map.png
-```
-
 ## Implementation Details
 
 - Framework: PyTorch
