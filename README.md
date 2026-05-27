@@ -4,7 +4,7 @@
 
 **_A compact and effective framework for binary change detection in high-resolution remote sensing images._**
 
-Jiacheng Wang
+LI Jiandun  Jiacheng Wang  Lv Junjie  Zhang Shuo
 
 <div align="center">
 
