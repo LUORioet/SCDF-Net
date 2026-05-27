@@ -27,13 +27,13 @@ Jiacheng Wang
 - **Gated decoding:** The Gated Difference Fusion Decoder Module (GDFDM) adaptively balances high-level semantic difference features and low-level detail features.
 - **Strong accuracy-efficiency tradeoff:** SCDF-Net achieves competitive performance with **18.12M** parameters and **15.31G** FLOPs on 256x256 inputs.
 
-## Abstract
+## 📄 Abstract
 
 Remote sensing image change detection aims to identify land-cover changes from a pair of bitemporal images. Although convolutional neural networks have achieved promising results, complex high-resolution scenes still suffer from redundant multi-scale background textures, pseudo-change responses, weak bitemporal difference modeling, and degraded boundary details during decoding.
 
 To address these issues, we propose **SCDF-Net**, a Spatial-Channel Difference Fusion Network. SCDF-Net adopts a non-weight-sharing pseudo-Siamese encoder to extract bitemporal multi-level features. ASCJE dynamically generates spatial and channel attention weights to enhance change-related responses. MDEFM explicitly strengthens multi-level bitemporal difference features through a difference enhancement path and a feature fusion path. GDFDM further performs gated top-down decoding to fuse semantic difference features and fine-grained spatial details. Experiments on three public remote sensing change detection datasets demonstrate that SCDF-Net achieves strong performance while maintaining a favorable balance between accuracy and model complexity.
 
-## Framework
+## 🎮 Framework
 
 ### Overall Architecture
 
@@ -67,7 +67,7 @@ MDEFM models bitemporal changes from two complementary perspectives. The feature
 
 GDFDM uses a learnable gate to control the contribution of high-level semantic features and low-level detailed features during decoding, improving the completeness and boundary quality of detected changes.
 
-## Performance
+## 📝 Performance
 
 We evaluate SCDF-Net on three public binary change detection datasets: **LEVIR-CD**, **CDD**, and **DSIFN-CD**. Precision (Pre), Recall (Rec), and F1-score (F1) are used as evaluation metrics.
 
@@ -110,7 +110,7 @@ The ablation experiments are conducted on the CDD dataset.
 <img src="assets/activation_heatmap.png" alt="Activation heatmap" style="width: 70%; max-width: 900px;">
 </div>
 
-## How to Use
+## 🎯 How to Use
 
 ### Installation
 
@@ -150,7 +150,7 @@ datasets/
 
 All images are cropped or resized to **256x256** during training and evaluation.
 
-### Training
+### 🎮 Training
 
 Training on LEVIR-CD as an example:
 
@@ -164,7 +164,7 @@ python train.py \
   --weight_decay 5e-4
 ```
 
-## Implementation Details
+## 📝 Implementation Details
 
 - Framework: PyTorch
 - Input size: 256x256
@@ -176,10 +176,10 @@ python train.py \
 - Loss function: Binary Cross-Entropy loss
 - Output: one-channel change probability map with Sigmoid activation
 
-## Acknowledgements
+## ❤️ Acknowledgements
 
 Thanks to the maintainers of the public remote sensing change detection datasets and the open-source implementations of representative methods such as FC-Siam, STANet, IFNet, SNUNet, DSAMNet, and BIT.
 
-## License
+## 📜 License
 
 This project is released for academic research. Please check the repository license before using the code for commercial purposes.
