@@ -4,8 +4,6 @@
 
 **_A compact and effective framework for binary change detection in high-resolution remote sensing images._**
 
-LI Jiandun,  Jiacheng Wang,  Junjie Lv,  Shuo Zhang
-
 <div align="center">
 
 <img src="https://img.shields.io/badge/Task-Change%20Detection-blue" height="25">
