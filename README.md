@@ -20,7 +20,7 @@ Jiacheng Wang
 <img src="assets/params_f1_cdd.png" alt="Parameter and F1-score comparison" style="width: 70%; max-width: 900px;">
 </div>
 
-## Highlights
+## ✨ Highlights
 
 - **Spatial-channel feature enhancement:** SCDF-Net introduces an Adaptive Spatial-Channel Joint Enhancement module (ASCJE) to recalibrate multi-scale features and suppress redundant background responses.
 - **Explicit bitemporal difference modeling:** The Multilevel Difference Enhancement Fusion Module (MDEFM) combines feature concatenation and directional difference enhancement to capture reliable cross-temporal changes.
