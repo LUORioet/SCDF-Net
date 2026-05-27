@@ -27,11 +27,6 @@ Jiacheng Wang
 - **Gated decoding:** The Gated Difference Fusion Decoder Module (GDFDM) adaptively balances high-level semantic difference features and low-level detail features.
 - **Strong accuracy-efficiency tradeoff:** SCDF-Net achieves competitive performance with **18.12M** parameters and **15.31G** FLOPs on 256x256 inputs.
 
-## News
-
-- **[2026.05]** The SCDF-Net repository is being organized and documented.
-- **[2026.05]** Experiments on LEVIR-CD, CDD, and DSIFN-CD have been completed.
-
 ## Abstract
 
 Remote sensing image change detection aims to identify land-cover changes from a pair of bitemporal images. Although convolutional neural networks have achieved promising results, complex high-resolution scenes still suffer from redundant multi-scale background textures, pseudo-change responses, weak bitemporal difference modeling, and degraded boundary details during decoding.
