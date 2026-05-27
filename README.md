@@ -11,7 +11,6 @@ Jiacheng Wang
 <img src="https://img.shields.io/badge/Task-Change%20Detection-blue" height="25">
 <img src="https://img.shields.io/badge/Framework-PyTorch-red" height="25">
 <img src="https://img.shields.io/badge/Datasets-LEVIR--CD%20%7C%20CDD%20%7C%20DSIFN--CD-green" height="25">
-<img src="https://img.shields.io/badge/Paper-Coming%20Soon-lightgrey" height="25">
 
 </div>
 
