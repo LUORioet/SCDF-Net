@@ -126,8 +126,8 @@ pip install -r requirements.txt
 Download the public datasets:
 
 - [LEVIR-CD](https://chenhao.in/LEVIR/)
-- CDD
-- DSIFN-CD
+- [CDD](https://drive.google.com/file/d/1GX656JqqOyBi_Ef0w65kDGVto-nHrNs9/edit?pli=1)  
+- [DSIFN-CD](https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images/tree/master/dataset) 
 
 Prepare each dataset in the following format:
 
