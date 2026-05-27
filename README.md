@@ -25,7 +25,6 @@ Jiacheng Wang
 - **Spatial-channel feature enhancement:** SCDF-Net introduces an Adaptive Spatial-Channel Joint Enhancement module (ASCJE) to recalibrate multi-scale features and suppress redundant background responses.
 - **Explicit bitemporal difference modeling:** The Multilevel Difference Enhancement Fusion Module (MDEFM) combines feature concatenation and directional difference enhancement to capture reliable cross-temporal changes.
 - **Gated decoding:** The Gated Difference Fusion Decoder Module (GDFDM) adaptively balances high-level semantic difference features and low-level detail features.
-- **Strong accuracy-efficiency tradeoff:** SCDF-Net achieves competitive performance with **18.12M** parameters and **15.31G** FLOPs on 256x256 inputs.
 
 ## 📄 Abstract
 
