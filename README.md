@@ -1,6 +1,6 @@
 <div align="center">
 
-<h2>SCDF-Net: Spatial-Channel Difference Fusion Network for Remote Sensing Image Change Detection</h2>
+<h2>SCDFNet: Spatial-Channel Difference Fusion Network for Remote Sensing Image Change Detection</h2>
 
 **_A compact and effective framework for binary change detection in high-resolution remote sensing images._**
 
