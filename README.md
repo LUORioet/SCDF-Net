@@ -20,7 +20,7 @@
 
 ## ✨ Highlights
 
-- **Spatial-channel feature enhancement:** SCDF-Net introduces an Adaptive Spatial-Channel Joint Enhancement module (ASCJE) to recalibrate multi-scale features and suppress redundant background responses.
+- **Spatial-channel feature enhancement:** SCDFNet introduces an Adaptive Spatial-Channel Joint Enhancement module (ASCJE) to recalibrate multi-scale features and suppress redundant background responses.
 - **Explicit bitemporal difference modeling:** The Multilevel Difference Enhancement Fusion Module (MDEFM) combines feature concatenation and directional difference enhancement to capture reliable cross-temporal changes.
 - **Gated decoding:** The Gated Difference Fusion Decoder Module (GDFDM) adaptively balances high-level semantic difference features and low-level detail features.
 
@@ -28,17 +28,17 @@
 
 Remote sensing image change detection aims to identify land-cover changes from a pair of bitemporal images. Although convolutional neural networks have achieved promising results, complex high-resolution scenes still suffer from redundant multi-scale background textures, pseudo-change responses, weak bitemporal difference modeling, and degraded boundary details during decoding.
 
-To address these issues, we propose **SCDF-Net**, a Spatial-Channel Difference Fusion Network. SCDF-Net adopts a non-weight-sharing pseudo-Siamese encoder to extract bitemporal multi-level features. ASCJE dynamically generates spatial and channel attention weights to enhance change-related responses. MDEFM explicitly strengthens multi-level bitemporal difference features through a difference enhancement path and a feature fusion path. GDFDM further performs gated top-down decoding to fuse semantic difference features and fine-grained spatial details. Experiments on three public remote sensing change detection datasets demonstrate that SCDF-Net achieves strong performance while maintaining a favorable balance between accuracy and model complexity.
+To address these issues, we propose **SCDFNet**, a Spatial-Channel Difference Fusion Network. SCDFNet adopts a non-weight-sharing pseudo-Siamese encoder to extract bitemporal multi-level features. ASCJE dynamically generates spatial and channel attention weights to enhance change-related responses. MDEFM explicitly strengthens multi-level bitemporal difference features through a difference enhancement path and a feature fusion path. GDFDM further performs gated top-down decoding to fuse semantic difference features and fine-grained spatial details. Experiments on three public remote sensing change detection datasets demonstrate that SCDFNet achieves strong performance while maintaining a favorable balance between accuracy and model complexity.
 
 ## 🎮 Framework
 
 ### Overall Architecture
 
 <div align="center">
-<img src="assets/scdfnet_overview.png" alt="SCDF-Net architecture" style="width: 90%; max-width: 1200px;">
+<img src="assets/scdfnet_overview.png" alt="SCDFNet architecture" style="width: 90%; max-width: 1200px;">
 </div>
 
-SCDF-Net consists of three main stages: a non-weight-sharing bitemporal encoder, multilevel difference enhancement, and gated prediction decoding. Given two input images T1 and T2, the network extracts multi-level features from both temporal branches, generates enhanced difference features at each level, and reconstructs the final binary change map through the decoder.
+SCDFNet consists of three main stages: a non-weight-sharing bitemporal encoder, multilevel difference enhancement, and gated prediction decoding. Given two input images T1 and T2, the network extracts multi-level features from both temporal branches, generates enhanced difference features at each level, and reconstructs the final binary change map through the decoder.
 
 ### Adaptive Spatial-Channel Joint Enhancement Module
 
@@ -66,7 +66,7 @@ GDFDM uses a learnable gate to control the contribution of high-level semantic f
 
 ## 📝 Performance
 
-We evaluate SCDF-Net on three public binary change detection datasets: **LEVIR-CD**, **CDD**, and **DSIFN-CD**. Precision (Pre), Recall (Rec), and F1-score (F1) are used as evaluation metrics.
+We evaluate SCDFNet on three public binary change detection datasets: **LEVIR-CD**, **CDD**, and **DSIFN-CD**. Precision (Pre), Recall (Rec), and F1-score (F1) are used as evaluation metrics.
 
 | Method | Params (M) | FLOPs (G) | LEVIR Pre | LEVIR Rec | LEVIR F1 | CDD Pre | CDD Rec | CDD F1 | DSIFN Pre | DSIFN Rec | DSIFN F1 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -80,7 +80,7 @@ We evaluate SCDF-Net on three public binary change detection datasets: **LEVIR-C
 | SNUNet | 3.01 | 27.44 | 84.66 | 91.34 | 87.87 | 90.92 | 94.75 | 92.79 | 62.47 | 69.74 | 65.90 |
 | DSAMNet | 16.95 | 75.29 | 82.75 | 88.39 | 85.48 | 91.67 | 94.83 | 93.22 | 61.28 | **75.41** | 67.62 |
 | BIT | 6.93 | 8.44 | 89.24 | 89.37 | 89.31 | 92.89 | 94.02 | 93.45 | 68.36 | 70.18 | 69.26 |
-| **SCDF-Net (ours)** | **18.12** | **15.31** | **90.79** | **91.80** | **91.29** | **96.20** | **96.72** | **96.48** | 68.85 | 72.61 | **70.68** |
+| **SCDFNet (ours)** | 18.12 | 15.31 | **90.79** | **91.80** | **91.29** | **96.20** | **96.72** | **96.48** | 68.85 | 72.61 | **70.68** |
 
 <div align="center">
 <img src="assets/params_f1_cdd.png" alt="Parameter and F1-score comparison on CDD" style="width: 80%; max-width: 1000px;">
@@ -94,8 +94,8 @@ The ablation experiments are conducted on the CDD dataset.
 | --- | :---: | :---: | :---: | ---: | ---: | ---: |
 | Baseline | - | - | - | 1.52 | 4.86 | 95.73 |
 | +ASCJE | yes | - | - | 1.99 | 5.43 | 95.98 |
-| +ASCJE+MDEFM | yes | yes | - | 15.34 | 18.26 | 96.40 |
-| **SCDF-Net** | **yes** | **yes** | **yes** | **18.12** | 15.31 | **96.48** |
+| +ASCJE+MDEFM | √ | √ | - | 15.34 | 18.26 | 96.40 |
+| SCDFNet | √ | √ | √ | 18.12 | 15.31 | **96.48** |
 
 ### Qualitative Results
 
