@@ -183,16 +183,3 @@ Thanks to the maintainers of the public remote sensing change detection datasets
 ## License
 
 This project is released for academic research. Please check the repository license before using the code for commercial purposes.
-
-## Citation
-
-If you find this work useful, please consider citing:
-
-```bibtex
-@article{wang2026scdfnet,
-  title   = {SCDF-Net: Spatial-Channel Difference Fusion Network for Remote Sensing Image Change Detection},
-  author  = {Wang, Jiacheng},
-  journal = {Manuscript},
-  year    = {2026}
-}
-```
