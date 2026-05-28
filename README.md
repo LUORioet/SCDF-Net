@@ -83,7 +83,8 @@ We evaluate SCDFNet on three public binary change detection datasets: **LEVIR-CD
 | **SCDFNet (ours)** | 18.12 | 15.31 | **90.79** | **91.80** | **91.29** | **96.20** | **96.72** | **96.48** | 68.85 | 72.61 | **70.68** |
 
 <div align="center">
-<img src="assets/params_f1_cdd.png" alt="Parameter and F1-score comparison on CDD" style="width: 80%; max-width: 1000px;">
+<img src="assets/table_comparison_cdd.png" alt="Comparison of different methods in terms of FLOPs, parameters, and F1-score
+on the CDD dataset" style="width: 80%; max-width: 1000px;">
 </div>
 
 ### Ablation Study
