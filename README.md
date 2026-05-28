@@ -84,7 +84,7 @@ We evaluate SCDFNet on three public binary change detection datasets: **LEVIR-CD
 
 <div align="center">
 <img src="assets/table_comparison_cdd.png" alt="Comparison of different methods in terms of FLOPs, parameters, and F1-score
-on the CDD dataset" style="width: 80%; max-width: 1000px;">
+on the CDD dataset" style="width: 90%; max-width: 1000px;">
 </div>
 
 ### Ablation Study
