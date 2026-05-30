@@ -95,7 +95,7 @@ The ablation experiments are conducted on the CDD dataset.
 | --- | :---: | :---: | :---: | ---: | ---: | ---: |
 | Baseline | - | - | - | 1.52 | 4.86 | 95.73 |
 | +ASCJE | yes | - | - | 1.99 | 5.43 | 95.98 |
-| +ASCJE+MDEFM | √ | √ | - | 15.34 | 18.26 | 96.40 |
+| +ASCJE+MDEFM | √ | √ | - | 15.34 | 18.26 | 96.30 |
 | SCDFNet | √ | √ | √ | 18.12 | 15.31 | **96.48** |
 
 ### Qualitative Results
