@@ -80,7 +80,7 @@ We evaluate SCDFNet on three public binary change detection datasets: **LEVIR-CD
 | SNUNet | 3.01 | 27.44 | 84.66 | 91.34 | 87.87 | 90.92 | 94.75 | 92.79 | 62.47 | 69.74 | 65.90 |
 | DSAMNet | 16.95 | 75.29 | 82.75 | 88.39 | 85.48 | 91.67 | 94.83 | 93.22 | 61.28 | **75.41** | 67.62 |
 | BIT | 6.93 | 8.44 | 89.24 | 89.37 | 89.31 | 92.89 | 94.02 | 93.45 | 68.36 | 70.18 | 69.26 |
-| **SCDFNet (ours)** | 18.12 | 15.31 | **90.79** | **91.80** | **91.29** | **96.20** | **96.72** | **96.48** | 68.85 | 72.61 | **70.68** |
+| **SCDFNet (ours)** | 18.12 | 15.31 | **90.79** | **91.80** | **91.29** | **96.77** | **96.20** | **96.48** | 68.85 | 72.61 | **70.68** |
 
 <div align="center">
 <img src="assets/table_comparison_cdd.png" alt="Comparison of different methods in terms of FLOPs, parameters, and F1-score
