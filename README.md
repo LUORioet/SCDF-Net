@@ -24,7 +24,7 @@ Remote sensing image change detection identifies land-cover changes from a pair 
 
 SCDFNet addresses these issues through a continuous change-information flow. It first builds reliability-enhanced spatial-channel representations, then couples explicit temporal discrepancy with complementary bitemporal context, and finally performs difference-conditioned reconstruction to coordinate high-level semantics with low-level spatial details.
 
-## Highlights
+## ✨ Highlights
 
 - **Progressive difference representation:** feature enhancement, temporal comparison, and decoding are organized as successive stages instead of isolated operations.
 - **Adaptive Spatial-Channel Joint Enhancement Module (ASCJE):** jointly models response variation, channel importance, and spatial saliency before temporal comparison.
@@ -32,7 +32,7 @@ SCDFNet addresses these issues through a continuous change-information flow. It 
 - **Gated Difference Fusion Decoder Module (GDFDM):** learns difference-conditioned gates that balance high-level semantic evidence and low-level spatial detail during reconstruction.
 - **Accuracy-efficiency balance:** SCDFNet reaches 91.29% F1 on LEVIR-CD and 96.48% F1 on CDD with 18.12M parameters and 15.31G FLOPs.
 
-## Architecture
+## 📄 Architecture
 
 SCDFNet uses two independent encoder branches to extract five levels of bitemporal features. MDEFM constructs a unified difference representation at each level, and four GDFDM stages progressively reconstruct the change map. A 1x1 convolution followed by Sigmoid produces the final change probability map.
 
@@ -60,7 +60,7 @@ MDEFM treats bitemporal change modeling as a dual-evidence problem. A feature-fu
 
 GDFDM upsamples the high-level difference feature and generates a gate from its joint response with the corresponding low-level feature. The gate adaptively controls the contribution of semantic and detailed evidence before refinement, improving both region completeness and boundary quality.
 
-## Experimental Setup
+## 🎮 Experimental Setup
 
 ### Datasets
 
@@ -117,7 +117,7 @@ SCDFNet obtains the highest F1-scores on LEVIR-CD and CDD. On DSIFN-CD, it outpe
 
 Compared with ChangeMamba, SCDFNet reduces the parameter count by 78.81% and FLOPs by 91.46%. Although it has more parameters than CDMamba, it requires 89.88% fewer FLOPs. This provides a favorable balance among detection accuracy, parameter count, and computation.
 
-## Ablation Study
+## 📝 Ablation Study
 
 The complete module-level ablation covers all eight possible configurations on CDD.
 
@@ -148,7 +148,7 @@ SCDFNet produces more complete changed regions and clearer boundaries, with fewe
   <img src="assets/activation_heatmap.png" alt="SCDFNet activation heatmaps" width="90%">
 </div>
 
-## Getting Started
+## 🎯 Getting Started
 
 ### Installation
 
@@ -225,7 +225,7 @@ Checkpoints are saved under `ckps/<TITLE>/`, and TensorBoard logs are written to
 python predict.py
 ```
 
-## Project Structure
+## 🎮 Project Structure
 
 ```text
 SCDF-Net/
@@ -243,15 +243,11 @@ SCDF-Net/
 └── requirements.txt
 ```
 
-## Citation
-
-Citation information will be added after publication.
-
-## Acknowledgements
+## ❤️ Acknowledgements
 
 We thank the maintainers of the public remote sensing change detection datasets and the authors of the representative comparison methods.
 
-## License
+## 📜 License
 
 This project is released for academic research. Please check the repository license before commercial use.
 
